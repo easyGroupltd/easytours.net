@@ -1,0 +1,33 @@
+/* FUTURA FONT */
+@font-face {
+	font-family: 'futura-book';
+	src: url('../fonts/futura-book.eot');
+	src: url('../fonts/futura-book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/futura-book.woff') format('woff'),
+		url('../fonts/futura-book.ttf') format('truetype'),
+		url('../fonts/futura-book.svg#futura-book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'futura-bold';
+	src: url('../fonts/futura-bold.eot');
+	src: url('../fonts/futura-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/futura-bold.woff') format('woff'),
+		url('../fonts/futura-bold.ttf') format('truetype'),
+		url('../fonts/futura-bold.svg#futura-bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* COOPER BLACK FONT */
+@font-face {
+	font-family: 'cooper';
+	src: url('../fonts/cooper-black.eot');
+	src: url('../fonts/cooper-black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/cooper-black.woff2') format('woff2'),
+		url('../fonts/cooper-black.woff') format('woff'),
+		url('../fonts/cooper-black.ttf') format('truetype'),
+		url('../fonts/cooper-black.svg#cooper-black') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

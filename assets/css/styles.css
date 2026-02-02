@@ -1,0 +1,692 @@
+/*-- STYLES -- */
+body {
+	padding-top: 4rem;
+	/*padding-top: 6.5rem;*/
+  color: #5a5a5a;
+	font-family:"futura-book",arial,sans-serif;
+	font-size:1.1rem;
+}
+
+a{
+	outline:none;
+	transition: ease 0.3s;
+}
+
+p{
+	line-height: 1.7rem;
+}
+
+p a{
+	color:#222;
+	text-decoration:underline;
+}
+p a:hover, p a:focus{
+	color:#f60;
+	text-decoration:none;
+	
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{	
+	font-family:"futura-bold",arial,sans-serif;
+}
+
+.futura{ 
+	font-family:"futura-book",arial,sans-serif !important;
+}
+.futura-bold{ 
+	font-family:"futura-bold",arial,sans-serif !important;
+}
+.cooper{ 
+	font-family:"cooper",cooper,cooper black,arial,serif !important; text-decoration:none; font-style:normal;
+}
+
+.bg-orange {
+	background-color: #F60 !important;
+}
+
+.btn-pill{
+	border-radius:25rem !important;
+}
+
+.btn{
+	text-decoration:none;
+}
+
+.devide-orange{
+	height:2px;
+	background:#ff9933;
+	border-top:1px solid #ff3300;
+	margin:2rem 0;
+}
+
+.strip{padding:4rem 0;
+}
+
+.strip-sm{padding:2rem 0;
+}
+
+.strip-md{padding:6rem 0;
+}
+
+.strip-lg{padding:8rem 0;
+}
+
+.strip-black{
+	background:#F8F8F8;
+	border-top:1px solid #EEE;
+}
+
+.container-sm{
+	max-width:700px;
+}
+
+#top{
+	background:#222;
+	padding:0.5rem;
+	text-align:center;
+	color:#FFF;
+}
+#top p{
+	margin:0;
+	font-size:0.8rem;
+}
+
+.btn-easy{
+    border: 2px solid #FFF;
+		background-color:#F60;
+    color: #FFF;
+    border-radius: 5rem;
+    margin-top: 20px !important;
+}
+
+.btn-easy:hover, 
+.btn-easy:focus{
+	color:#FFF;
+	background-color:#F60;
+	-webkit-box-shadow: 0px 10px 10px -5px rgba(34,34,34,0.15);
+	-moz-box-shadow: 0px 10px 10px -5px rgba(34,34,34,0.15);
+	box-shadow: 0px 10px 10px -5px rgba(34,34,34,0.15);
+}
+
+.feature-title{
+	font-size:3rem;
+	color:#F60;
+}
+
+.spacer{
+	padding:20px 0;
+}
+.devide{
+	margin:40px 0;
+	height:1px;
+	background:#EEE;
+}
+
+.background-orange{
+  background-color:#F60;
+}
+
+/* CUSTOMIZE THE CAROUSEL */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* MARKETING CONTENT */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+footer{
+	background:url(../images/top-shadow.png) no-repeat top center;
+	padding:5rem 0;
+	margin:0;
+}
+
+#footer-orange{
+	background-color:#F60;
+	color:#FFF;
+}
+
+#footer-orange a{
+	color:#FFF;
+	text-decoration:none;
+}
+
+#footer-orange a:footer{
+	color:#FFF;
+}
+
+.footer-brand-list{
+	text-align:center;
+	font-family:"cooper",cooper,cooper black,arial,serif;
+	margin:0;
+}
+
+.footer-brand-list a{
+	display: block;
+	line-height: 2rem;
+}
+
+.footer-brand-list a:hover{
+	text-decoration:none;
+	transition:all ease-in 0.3s;
+}
+
+.footer-brand-list a::before{
+  font-family:"futura-book",arial,sans-serif;
+	content:"• ";
+  color: #F60;
+}
+
+.footer-brand-list a::after{
+  font-family:"futura-book",arial,sans-serif;
+	content:" •";
+  color: #F60;
+}
+
+.footer-brand-list a:hover::before{
+  font-family:"futura-book",arial,sans-serif;
+	content:"• ";
+  color: #FFF;
+}
+
+.footer-brand-list a:hover::after{
+  font-family:"futura-book",arial,sans-serif;
+	content:" •";
+  color: #FFF;
+}
+
+
+/*-- OVERWRITES --*/
+
+.navbar-brand span{
+	font-size:1.5rem;
+}
+.navbar-brand span {
+	font-size: 1.75rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(255, 255, 255, 1);
+}
+
+.dropdown-toggle::after {
+	content: none;
+}
+
+header {
+	-webkit-box-shadow: 0px 5px 7px -3px #00000024;
+	-moz-box-shadow: 0px 5px 7px -3px #00000024;
+  box-shadow: 0px 5px 7px -3px #00000024;
+}
+
+header .navbar {
+	padding: 0.6rem 1rem;
+}
+
+header .navbar-dark .navbar-toggler {
+	border-color: rgba(255, 255, 255, 0);
+}
+
+header .navbar-dark .navbar-toggler-icon{
+	background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+
+header .dropdown-item{
+	font-family:"futura-condensed-light",arial,sans-serif;
+	letter-spacing: 0.08rem;
+	color: #FFF;
+	padding: 0.4rem 1.3rem;
+}
+
+header .dropdown-item::before{
+	content: "- ";
+}
+
+header .dropdown-menu {
+	background-color: #F60;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius:0;
+	padding: 0;
+}
+
+header .nav-link{
+	padding: 0.7rem 1rem 0.4rem !important;
+}
+
+header .nav-link-bold{
+	padding: 0.7rem 1rem 0.4rem !important;
+	font-family:"futura-bold",arial,sans-serif !important;
+}
+
+header .nav-link-button {
+	background: #F60 none repeat scroll 0 0;
+	border-radius: 50px;
+	border:2px solid #FFFFFFAA;
+	color: #fff !important;
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+	padding-top: 0.5rem !important;
+}
+
+header .nav-link-button:hover, 
+header .nav-link-button:focus {
+	border-color:#FFF;
+	background-color:#F60;
+	color:#FFF !important;
+	-webkit-box-shadow: 0px 10px 10px -5px rgba(34,34,34,0.15);
+	-moz-box-shadow: 0px 10px 10px -5px rgba(34,34,34,0.15);
+	box-shadow: 0px 10px 10px -5px rgba(34,34,34,0.15);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, 
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255,255,255,.9);
+}
+
+.lead{
+	font-size:1.5rem;
+}
+
+/* PARALAX */
+
+.parallax-window-fixed{
+  background-image: url("../images/easy-background-orange.gif");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-hero{
+	background: transparent none repeat scroll 0 0;
+	padding: 3rem 0;
+	/* min-height: calc(100vh - 64px); */
+}
+
+.coming-soon-strip {
+	background: transparent none repeat scroll 0 0;
+	border-bottom: 1px solid #eee;
+	padding: 7rem 0;
+}
+
+.section-hero-block,
+.coming-soon-block{
+	background: #f60 none repeat scroll 0 0;
+	border:solid 2px #FFF;
+	border-radius: 10px;
+	/*box-shadow: 0 2px 30px -2px rgba(0, 0, 0, 0.2);*/
+	color: #FFF;
+	margin: 0 auto;
+	max-width: 720px;
+	padding: 2rem;
+	text-align: center;
+	-webkit-box-shadow: 0px 5px 10px 3px rgba(34,34,34,0.2);
+	-moz-box-shadow: 0px 5px 10px 3px rgba(34,34,34,0.2);
+  box-shadow: 0px 5px 10px 3px rgba(34,34,34,0.2);
+}
+
+.hero-title{
+	font-family: "futura-book",arial,sans-serif;
+	font-style: normal;
+	font-weight:normal;
+	font-size: 3.5rem;
+	margin-bottom:1.5rem;
+}
+
+.section-hero-block h2,
+.coming-soon-block h2{
+	font-family: "futura-book",arial,sans-serif;
+	font-weight:normal;
+	font-size: 1.5rem;
+}
+
+.section-hero-block sup,
+.coming-soon-block sup{
+	font-size:1rem;
+}
+
+.section-hero-block a,
+.coming-soon-block a{
+	color:#FFF;
+}
+.section-hero-block a:hover,
+.section-hero-block a:focus,
+.section-hero-block a:visited,
+.coming-soon-block a:hover,
+.coming-soon-block a:focus,
+.section-hero-block a:visited{
+	text-decoration:none;
+  color: #FFF;
+}
+
+.coming-soon-title{
+color: #222;
+text-transform: uppercase;
+letter-spacing: 4px;
+font-family:"futura-bold",arial,sans-serif !important;
+margin-bottom: 1rem;
+}
+
+.widget-tab-container .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 1rem 2rem;
+}
+
+.widget-tab-container .nav-tabs .nav-item.show .nav-link, 
+.widget-tab-container .nav-tabs .nav-link.active {
+  color: #FFF;
+  background-color: #F60;
+  border-color: #FFF;
+  border-bottom:none;
+
+}
+
+.widget-tab-container .nav-tabs .nav-link {
+  border: 2px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: transparent;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  outline: none;
+}
+
+.widget-tab-container .nav-tabs{
+  border-bottom: none;
+}
+
+.widget-tab-container .tab-content{
+  border: 2px solid #FFF;
+  margin-top: -2px;
+  text-align: left;
+  padding:2rem;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #F60;
+	border-color: #f60;
+	border-radius: 5rem;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+	background-color: #F60;
+	border-color: #F60;
+	color:#FFF;
+-webkit-box-shadow: 0px 10px 15px -5px rgba(34,34,34,0.4);
+-moz-box-shadow: 0px 10px 15px -5px rgba(34,34,34,0.4);
+box-shadow: 0px 10px 15px -5px rgba(34,34,34,0.4);
+}
+
+.cookie-policy header{
+	background:#F60;
+	color:#FFF;
+}
+
+/*
+.cookie-policy footer{
+	background:#F60;
+	color:#FFF;
+}
+*/
+
+.cookie-policy footer a, .cookie-policy footer a:hover, .cookie-policy footer a:focus{
+	color:#FFF;
+}
+
+.easyoffice-banner{
+	border:6px solid #EEE;
+	display:block;
+	margin:30px 0;
+}
+
+.easyoffice-banner:hover, .easyoffice-banner:focus{
+	text-decoration:none;
+	border-color:#F50;
+}
+
+.easyoffice-banner-text{
+float:left;
+padding:30px;
+background-color:#F60;
+color:#FFF;
+width:70%;
+}
+
+.easyoffice-banner-img{
+float:right;
+width:30%;
+background-color:red;
+background-image:url(../images/easyoffice-banner-img-03.jpg);
+background-repeat:no-repeat;
+background-position:center center;
+background-size:cover;
+height: 213px;
+}
+
+.btn-easyoffice{
+	border:2px solid #FFF;
+	border-radius:50px;
+	padding:5px 20px;
+	display:inline-block;
+	letter-spacing:1px;
+}
+
+.map-container iframe{
+	border:1px solid #CCC;
+	border-bottom:4px solid #F60;
+}
+
+.page-title-parallax{
+	text-align:center;
+	color:#FFF;
+	font-size:4rem;
+}
+
+
+
+/* BOOKING.COM WIDGET FIX */
+iframe{
+z-index: auto !important;
+}
+
+/* Fade in's */
+
+.section-hero-block{
+				animation: fadeIn ease-in 2s;
+				-webkit-animation: fadeIn ease-in 2s;
+				-moz-animation: fadeIn ease-in 2s;
+				-o-animation: fadeIn ease-in 2s;
+				-ms-animation: fadeIn ease-in 2s;
+			}
+
+				@keyframes fadeIn {
+					0% {opacity:0;}
+					100% {opacity:1;}
+				}
+				
+				@-moz-keyframes fadeIn {
+					0% {opacity:0;}
+					100% {opacity:1;}
+				}
+				
+				@-webkit-keyframes fadeIn {
+					0% {opacity:0;}
+					100% {opacity:1;}
+				}
+				
+				@-o-keyframes fadeIn {
+					0% {opacity:0;}
+					100% {opacity:1;}
+				}
+				
+				@-ms-keyframes fadeIn {
+					0% {opacity:0;}
+					100% {opacity:1;}
+				}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+
+@media (max-width:1200px){
+	.easyoffice-banner-text{
+		width:100%;
+	}
+	.easyoffice-banner-img{
+		display:none;
+	}
+}
+
+
+@media (max-width:992px){
+}
+
+
+
+
+@media (max-width:768px){
+
+  .section-hero{
+    padding: 2rem 0;
+  }
+	
+  .strip-md, .strip-lg{
+    padding:4rem 0;
+  }
+
+	header .nav-link {
+		font-size: 1.4rem;
+		padding: 0.25rem 1rem !important;
+	}
+	
+	header .dropdown-item {
+		font-size: 1.2rem;
+	}
+	
+	header .dropdown-item {
+    padding: 0.2rem 1.5rem;
+		border-radius:0.2rem;
+	}
+	
+	header .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0);
+	}
+	.navbar-brand span {
+    font-size: 1.5rem;
+	}
+	header .navbar-collapse {
+	margin-top: 0.5rem;
+    }
+    .page-title-parallax{font-size:2.5rem;
+    }
+    .hero-title, 
+	.coming-soon-block h1 {
+	font-size: 2rem;
+	}
+  
+  .widget-tab-container .nav-tabs .nav-link {
+    width: 100%;
+    padding: .5rem 2rem;
+  }
+
+  .widget-tab-container .nav-tabs {
+    border: 2px solid #FFF;
+  }
+
+  .widget-tab-container .nav-tabs .nav-item.show .nav-link, 
+  .widget-tab-container .nav-tabs .nav-link.active {
+    color: #F60;
+    background-color: #FFF;
+    border: none;
+  }
+  
+}
+
+@media (max-width:480px){
+
+  .hero-title{
+  display:none;
+  }
+	
+	.btn-group-lg>.btn, .btn-lg {
+	font-size: 1rem;
+	}
+	
+	.coming-soon-strip {
+	padding: 3rem 0;
+	}
+	
+	.coming-soon-block {
+	padding: 2rem 2rem;
+	}
+}
