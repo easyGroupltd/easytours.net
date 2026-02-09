@@ -217,6 +217,8 @@ footer{
 	transition:all ease-in 0.3s;
 }
 
+/*-- removing dots from either side of the footer links
+
 .footer-brand-list a::before{
   font-family:"futura-book",arial,sans-serif;
 	content:"• ";
@@ -240,6 +242,7 @@ footer{
 	content:" •";
   color: #FFF;
 }
+--*/
 
 
 /*-- OVERWRITES --*/
